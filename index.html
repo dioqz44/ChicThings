@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chic Things</title> 
+    <link rel="icon" type="image/png" href="icons/title-logo.png">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+      <div class="top-bar">
+       <div class="left-section">
+          <div class="menu-wrapper">
+            <button title="Menu" class="hamburger-button" id="hamburgerButton">
+              <img class="hamburger-icon" src="icons/hamburger-icon.png" alt="Menu">
+            </button>
+            <div class="dropdown-menu" id="dropdownMenu">
+              <a href="#faqs" class="dropdown-item">FAQs</a>
+              <a href="#about-us" class="dropdown-item">About Us</a>
+            </div>
+          </div>
+          <a href="index.html" class="brand-link">
+            <img class="img" src="icons/logo.png" alt="Chic Things Logo">
+            <span>CHIC THINGS</span>
+          </a>
+        </div>
+        <div class="right-section">
+          <button class="signin-button" id="signinButton">
+            <span id="userDisplay">Sign In</span>
+          </button>
+          <button class="cart-button" id="cartButton" onclick="window.location.href='cart.html'">
+            <img class="cart-icon" src="icons/cart.png" alt="Cart">
+            <span class="cart-text">Cart</span>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+          &#169 2026
+          
+        </div>
+
+      </div>
+      <div class="sidebar-left">
+       <button title="Clothes" class="sidebar-link" data-section="clothes">
+          <img class="img" src="icons/clothes.png" alt="Clothes">
+        </button>
+
+        <button title="Accessories"         class="sidebar-link" data-section="accessories">
+          <img class="img" src="icons/accessories.png" alt="Accessories">
+        </button>
+      </div>
+      <div class="sidebar-right"></div>
+      
+    </nav>
+     <main class="content">
+      <div class="main">
+        <div class="top">
+          Styles that Chic and Afford
+        </div>
+        <div class="middle">
+          <img class="img" src="icons/line.png">
+        </div>
+      <div class="bottom">
+        <section id="clothes" class="product-section">
+          <div class="className">Clothing</div>
+
+          <div class="price">&#8369 59</div>
+          <div class="container">
+            <div class="card"
+                data-name="Basic Top 1"
+                data-price="59"
+                data-images='["thumbnails/mimi.webp","thumbnails/emotional-damage.webp"]'>
+              <div class="profile-pic">
+                <img class="picture" src="thumbnails/mimi.webp" alt="Basic Top 1">
+              </div>
+              <div class="details">Basic Top 1</div>
+              <div class="inventory">59 sold</div>
+            </div>
+
+            <div class="card"
+                data-name="Basic Top 2"
+                data-price="59"
+                data-images='["thumbnails/kuku.avif","thumbnails/mimi.webp"]'>
+              <div class="profile-pic">
+                <img class="picture" src="thumbnails/kuku.avif" alt="Basic Top 2">
+              </div>
+              <div class="details">Basic Top 2</div>
+              <div class="inventory">45 sold</div>
+            </div>
+          </div>
+
+          <div class="price">&#8369 79</div>
+          <div class="container">
+            <div class="card"
+                data-name="Smocking Top 1"
+                data-price="79"
+                data-images='["thumbnails/mimi.webp","thumbnails/mimi.webp"]'>
+              <div class="profile-pic">
+                <img class="picture" src="thumbnails/mimi.webp" alt="Smocking Top 1">
+              </div>
+              <div class="details">Smocking Top 1</div>
+              <div class="inventory">59 sold</div>
+            </div>
+
+            <div class="card"
+                data-name="Smocking Top 2"
+                data-price="79"
+                data-images='["thumbnails/momo.jpg","thumbnails/mimi.webp"]'>
+              <div class="profile-pic">
+                <img class="picture" src="thumbnails/mimi.webp" alt="Smocking Top 2">
+              </div>
+              <div class="details">Smocking Top 2</div>
+              <div class="inventory">38 sold</div>
+            </div>
+          </div>
+        </section>
+
+        <section id="accessories" class="product-section">
+          <div class="className">Accessories</div>
+
+          <div class="price">&#8369 99</div>
+          <div class="container">
+            <div class="card"
+                data-name="Necklace 1"
+                data-price="99"
+                data-images='["thumbnails/mimi.webp","thumbnails/momo.jpg"]'>
+              <div class="profile-pic">
+                <img class="picture" src="thumbnails/mimi.webp" alt="Necklace 1">
+              </div>
+              <div class="details">Necklace 1</div>
+              <div class="inventory">24 sold</div>
+            </div>
+
+            <div class="card"
+                data-name="Keychain 1"
+                data-price="99"
+                data-images='["thumbnails/kuku.avif","thumbnails/mimi.webp"]'>
+              <div class="profile-pic">
+                <img class="picture" src="thumbnails/emotional-damage.webp" alt="Keychain 1">
+              </div>
+              <div class="details">Keychain 1</div>
+              <div class="inventory">18 sold</div>
+            </div>
+          </div>
+        </section>
+      </div>
+      </div>
+      
+
+    </main>
+    
+    <div class="product-modal" id="productModal">
+  <div class="modal-content">
+
+    <span class="close-modal" id="closeModal">&times;</span>
+
+    <button class="nav-button prev" id="prevImage">&#10094;</button>
+
+    <img class="modal-image" id="modalImage" src="" alt="Product">
+
+    <button class="nav-button next" id="nextImage">&#10095;</button>
+
+    <div class="modal-footer">
+      <div class="modal-product-name" id="modalName"></div>
+      <div class="modal-product-price" id="modalPrice"></div>
+
+      <button class="add-to-cart-button" id="modalAddToCart">
+        Add to Cart
+      </button>
+    </div>
+
+  </div>
+</div>  
+   <script src="js/script.js"></script> 
+  </body>
+</html>

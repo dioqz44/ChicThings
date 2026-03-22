@@ -1,0 +1,13 @@
+body {
+  font-family: Cinzel, serif;
+  margin: 0px;
+  background-color: rgb(255, 223, 227);
+
+}
+.sidebar-link {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
