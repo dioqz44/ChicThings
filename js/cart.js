@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // =========================
   if (signinButton && userDisplay) {
     signinButton.addEventListener("click", () => {
-      const firstName = "Kim";
+      const firstName = "Don Ian";
       userDisplay.textContent = firstName;
     });
   }
